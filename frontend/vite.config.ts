@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/auth': {
-        target: 'http://localhost:8080',
+        target: 'https://letter-editor-backend-xi.vercel.app/',
         changeOrigin: true,
         secure: false,
       },
