@@ -1,0 +1,14 @@
+@import "tailwindcss";
+.tiptap {
+  outline: none;
+  min-height: 250px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+
+ul {
+  list-style-type: disc;
+}
