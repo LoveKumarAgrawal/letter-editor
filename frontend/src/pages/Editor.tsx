@@ -70,25 +70,22 @@ const LetterEditor = () => {
         <div className="mb-4 space-x-2">
           <button
             onClick={() => applyStyle("bold")}
-            className={`${
-              editor.isActive("bold") ? "bg-gray-500 text-white" : "bg-gray-200"
-            } px-2 py-1 rounded hover:bg-gray-300 cursor-pointer`}
+            className={`${editor.isActive("bold") ? "bg-gray-500 text-white" : "bg-gray-200"
+              } px-2 py-1 rounded hover:bg-gray-300 cursor-pointer`}
           >
             Bold
           </button>
           <button
             onClick={() => applyStyle("italic")}
-            className={`${
-              editor.isActive("italic") ? "bg-gray-500 text-white" : "bg-gray-200"
-            } px-2 py-1 rounded hover:bg-gray-300 cursor-pointer`}
+            className={`${editor.isActive("italic") ? "bg-gray-500 text-white" : "bg-gray-200"
+              } px-2 py-1 rounded hover:bg-gray-300 cursor-pointer`}
           >
             Italic
           </button>
           <button
             onClick={() => applyStyle("bulletList")}
-            className={`${
-              editor.isActive("bulletList") ? "bg-gray-500 text-white" : "bg-gray-200"
-            } px-2 py-1 rounded hover:bg-gray-300 cursor-pointer`}
+            className={`${editor.isActive("bulletList") ? "bg-gray-500 text-white" : "bg-gray-200"
+              } px-2 py-1 rounded hover:bg-gray-300 cursor-pointer`}
           >
             Bullet list
           </button>
@@ -109,9 +106,8 @@ const LetterEditor = () => {
         {/* Save status message */}
         {saveMessage && (
           <div
-            className={`mt-4 text-center ${
-              saveMessage === "Letter saved successfully!" ? "text-green-500" : "text-red-500"
-            }`}
+            className={`mt-4 text-center ${saveMessage === "Letter saved successfully!" ? "text-green-500" : "text-red-500"
+              }`}
           >
             {saveMessage}
           </div>
