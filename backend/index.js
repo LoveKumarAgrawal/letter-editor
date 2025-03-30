@@ -16,7 +16,7 @@ app.use(session({
    secret: `${process.env.SESSION_SECRET}`,
    resave: false,
    saveUninitialized: true,
-   cookie: { secure: true, httpOnly: true}
+   cookie: { secure: false, httpOnly: true}
 }));
 
 app.use(passport.initialize());
@@ -29,10 +29,6 @@ app.use(
 		credentials: true,
 	})
 );
-
-app.get("/", (req, res) => {
-	res.send("hello")
-})
 
 app.use("/auth", authRoute);
 app.use("/letter", letterRoute)
