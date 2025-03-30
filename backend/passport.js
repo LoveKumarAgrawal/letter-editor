@@ -8,7 +8,6 @@ passport.use(
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET,
 			callbackURL: `${process.env.GOOGLE_CALLBACK_URL}/auth/google/callback`,
 			scope: ["profile", "email", "https://www.googleapis.com/auth/drive.file"],
-			passReqToCallback: true
 		},
 		function (accessToken, refreshToken, profile, callback) {
 			profile.accessToken = accessToken;
