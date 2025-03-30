@@ -16,7 +16,7 @@ app.use(session({
    secret: `${process.env.SESSION_SECRET}`,
    resave: false,
    saveUninitialized: true,
-   cookie: { secure: true, httpOnly: true }
+   cookie: { secure: true, httpOnly: true, domain: '.letter-editor-nine.vercel.app' }
 }));
 
 app.use(passport.initialize());

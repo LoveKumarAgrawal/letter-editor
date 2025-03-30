@@ -10,7 +10,7 @@ export default defineConfig({
       '/auth': {
         target: 'https://letter-editor-backend-xi.vercel.app',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
     },
   },
