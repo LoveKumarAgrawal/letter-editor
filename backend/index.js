@@ -30,6 +30,10 @@ app.use(
 	})
 );
 
+app.get("/", (req, res) => {
+	res.send("hello")
+})
+
 app.use("/auth", authRoute);
 app.use("/letter", letterRoute)
 
